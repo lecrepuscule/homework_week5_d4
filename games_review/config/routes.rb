@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "/games/new" => "games#new"
   post "/games" => "games#create"
   get "/games/:id" => "games#show"
-  get "/games/edit" => "games#edit"
+  get "/games/:id/edit" => "games#edit"
   put "/games/:id" => "games#update"
   patch "/games/:id" => "games#update"
   delete "/games/:id" => "games#delete"

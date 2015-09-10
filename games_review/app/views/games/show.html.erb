@@ -2,3 +2,7 @@
 
 <p><%= @game.genre %></p>
 <p><%= @game.studio %></p>
+
+<form id='edit-form' action='/games/<%= @game.id %>/edit' method='get'>
+<button class='edit-game-button'>Edit</button>
+</form>
