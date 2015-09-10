@@ -30,7 +30,7 @@ protect_from_forgery
   def update
     @game = Game.find(params[:id])
     if @game.update_attributes(game_params)
-      redirect_to("/game/#{@game.id}")
+      redirect_to("/games/#{@game.id}")
     else
       render :edit
     end

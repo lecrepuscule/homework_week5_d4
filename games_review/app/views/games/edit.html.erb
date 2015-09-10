@@ -1,6 +1,6 @@
 <h2>Edit Game</h2>
 
-<%= form_for @game do |f| %>
+<%= form_for @game, url: "/games/#{@game.id}" do |f| %>
   <%= f.label :name %>:
   <%= f.text_field :name %><br />
 
