@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   put "/games/:id" => "games#update"
   patch "/games/:id" => "games#update"
   delete "/games/:id" => "games#delete"
+  post "/games/:id/delete" => "games#delete"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

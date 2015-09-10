@@ -6,3 +6,7 @@
 <form id='edit-form' action='/games/<%= @game.id %>/edit' method='get'>
 <button class='edit-game-button'>Edit</button>
 </form>
+
+<form id='delete-form' action='/games/<%= @game.id %>/delete' method='post'>
+<button class='delete-game-button'>Delete</button>
+</form>

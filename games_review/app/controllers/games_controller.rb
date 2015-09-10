@@ -37,6 +37,10 @@ protect_from_forgery
   end
 
   def delete
+    @game = Game.find(params[:id])
+    if @game.destroy
+      redirect_to("/games")
+    end
   end
 
 
